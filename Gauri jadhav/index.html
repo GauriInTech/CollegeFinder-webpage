@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CollegeFinder</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Find Colleges</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Find Your Perfect College</h2>
+            <p>Explore top colleges and universities across the country</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput"  placeholder="Search by college name, location, or course">
+                <button class="search-btn" onclick="filterColleges()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            
+            <div class="filters">
+                <h3>Filters</h3>
+                <select id="courseFilter" onchange="filterColleges()">
+                    <option value="">Select a Course</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Law">Law</option>
+                
+                </select>
+            </div> 
+            <div class="college-list" id="collegeList">
+                <h3>Top Colleges</h3>
+                <!-- College details will be inserted here by JavaScript -->
+            </div>
+            <!-- Pagination Controls -->
+            <div id="paginationControls" class="pagination-controls">
+                <!-- Pagination buttons will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 CollegeFinder. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="script.js"></script>
+   
+</body>
+</html>
